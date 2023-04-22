@@ -10,7 +10,7 @@ logger = logging.getLogger('mylogger')
 
 def index(request):  
 #   logger.info("start index func ,request=" + str(request))
-    return HttpResponse("Hello Django")
+    return HttpResponse("Hello Django!!!")
 
 def index(request):
     return render(
