@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AdminLTE 3 | Log in (v2)</title>
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="/static/plugins/fontawesome-free/css/all.min.css">
+        <!-- icheck bootstrap -->
+        <link rel="stylesheet" href="/static/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="/static/dist/css/adminlte.min.css">        
+    </head>
+    <body>
+    {% block navbar %}
+    {% include 'drtsai/navbar.html' %}
+    {% endblock %}
+        <table class="table table-bordered text-center">
+            <tbody><tr>
+              <th>Normal</th>
+              <th>Large <code>.btn-lg</code></th>
+              <th>Small <code>.btn-sm</code></th>
+              <th>Extra Small <code>.btn-xs</code></th>
+              <th>Flat <code>.btn-flat</code></th>
+              <th>Disabled <code>.disabled</code></th>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block btn-outline-primary">藍色</button>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+              <td>
+
+              </td>
+              <td>
+                <!--  btn-lg -->
+                <button type="button" class="btn btn-block btn-outline-success">綠色</button>
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+            </tr>
+
+        </div>
+        <!-- /.col -->>
+ 
+        <strong>Hello, {{ name }}!</strong> Template 時間 {{ date | date:"l,d F, Y" }} at {{ date | time:"H:i:s" }}
+    </body>
+</html>
